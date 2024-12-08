@@ -1,4 +1,4 @@
-name: Build (Test)
+name: Build (Windows)
 
 on:
   push:
@@ -26,7 +26,8 @@ jobs:
 
     strategy:
       matrix:
-        os: [	macos-latest, ubuntu-latest, windows-latest ]
+        #os: [	macos-latest, ubuntu-latest, windows-latest ]
+        os: [ windows-latest ]
 
     steps:
       - name: Check out Git repository
@@ -60,5 +61,5 @@ jobs:
         with:
           tag_name: ${{ inputs.version }}
           name: v${{ inputs.version }}
-          files: dist/*
+          files: dist/DiscordBotClient*
           draft: true

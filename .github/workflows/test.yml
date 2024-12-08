@@ -1,4 +1,4 @@
-name: Build/release
+name: Build Windows
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
     strategy:
       matrix:
         #os: [	macos-latest, ubuntu-latest, windows-latest ]
-        os: [ ubuntu-latest ]
+        os: [ windows-latest ]
 
     steps:
       - name: Check out Git repository
@@ -26,6 +26,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
+
+      - name: Build
+        run: npm run win
 
       - name: List all files
         run: ls

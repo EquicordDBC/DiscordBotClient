@@ -73,8 +73,8 @@
 		"build": "electron-builder",
 		"requirement": "npm install && npm run npmVencord",
 		"fetchLatestDiscordBuild": "node scripts/patchAll.js",
-		"npmVencord": "cd VencordDBC && npm i -f && cd ..",
-		"vencord": "cd VencordDBC && node --require=./scripts/suppressExperimentalWarnings.js scripts/build/buildWeb.mjs && cd ..",
+		"npmVencord": "cd EquicordDBC && npm i -f && cd ..",
+		"vencord": "cd EquicordDBC && node --require=./scripts/suppressExperimentalWarnings.js scripts/build/buildWeb.mjs && cd ..",
 		"cerf": "openssl req -nodes -new -x509 -keyout server.key -out server.cert -days 3650 -subj \"/CN=localhost\"",
 		"test": "npm run vencord & npm run start"
 	},

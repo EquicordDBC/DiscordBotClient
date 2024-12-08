@@ -46,6 +46,9 @@ jobs:
       - name: Clone EquicordDBC
         run: git clone https://github.com/EquicordDBC/EquicordDBC
 
+      - name: Show Equicord Plugins (Debug)
+        run: ls EquicordDBC/src/plugins
+
       - name: Install Dependencies
         run: npm run requirement
 

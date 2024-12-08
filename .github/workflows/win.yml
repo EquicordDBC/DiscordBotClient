@@ -49,8 +49,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run build
 
-      - name: List all files
-        run: ls
+      - name: List all files (dist)
+        run: ls dist
 
       - name: Create Draft Release
         if: ${{ inputs.create_release }}

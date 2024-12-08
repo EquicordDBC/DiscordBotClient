@@ -38,8 +38,8 @@ jobs:
         with:
           node-version: '20.x'
 
-      - name: Clone VencordDBC
-        run: git clone https://github.com/aiko-chan-ai/VencordDBC.git
+      - name: Clone EquicordDBC
+        run: git clone https://github.com/EquicordDBC/EquicordDBC
 
       - name: Install Dependencies
         run: npm run requirement

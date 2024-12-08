@@ -14,6 +14,11 @@ on:
         default: ""
         required: true
         type: string
+      upload_artifact:
+        description: "Upload artifact"
+        default: true
+        required: false
+        type: boolean
       create_release:
         description: "Create a draft release"
         default: false
@@ -51,6 +56,14 @@ jobs:
 
       - name: List all files (dist)
         run: ls dist
+
+      - name: Upload Artifact
+        if: ${{ inputs.upload_artifact }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: v${{ inputs.version }}
+          path: ${{ github.workspace }}/dist
+          if-no-files-found: error
 
       - name: Create Draft Release
         if: ${{ inputs.create_release }}

@@ -1,4 +1,4 @@
-name: Build Windows
+name: Build (Test)
 
 on:
   push:
@@ -8,6 +8,17 @@ on:
     branches:
       - electron-v3
   workflow_dispatch:
+    inputs:
+      version:
+        description: "Release Version"
+        default: ""
+        required: true
+        type: string
+      create_release:
+        description: "Create a draft release"
+        default: false
+        required: false
+        type: boolean
 
 jobs:
   release:
@@ -34,3 +45,15 @@ jobs:
 
       - name: List all files
         run: ls
+
+      - name: Create Draft Release
+        if: ${{ inputs.create_release }}
+        id: create_release
+        uses: softprops/action-gh-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ inputs.version }}
+          name: v${{ inputs.version }}
+          files: dist/*
+          draft: true

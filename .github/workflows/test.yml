@@ -38,7 +38,7 @@ jobs:
           node-version: '20.x'
 
       - name: Clone VencordDBC
-        run: git clone git clone https://github.com/aiko-chan-ai/VencordDBC.git
+        run: git clone https://github.com/aiko-chan-ai/VencordDBC.git
 
       - name: Install Dependencies
         run: npm run requirement

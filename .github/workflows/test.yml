@@ -38,7 +38,7 @@ jobs:
           node-version: '20.x'
 
       - name: Install Dependencies
-        run: npm run requirements
+        run: npm run requirement
 
       - name: Build
         env:

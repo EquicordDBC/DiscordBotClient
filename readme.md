@@ -36,11 +36,6 @@ Discord Inc.
 
 ### Windows
 
-Discord Bot Client can be installed in Windows via [Winget](https://learn.microsoft.com/en-us/windows/package-manager/):
-```
-winget install aiko-chan-ai.DiscordBotClient
-```
-
 ### Using prebuilt binaries
 
 If you don't want to build the application yourself or use some kind of
@@ -48,7 +43,7 @@ package management system, you can get the latest binaries for the three
 major systems in the release overview:
 
 > [!TIP]
-> <a href="https://github.com/aiko-chan-ai/DiscordBotClient/releases/latest"><img src="https://img.shields.io/github/downloads/aiko-chan-ai/DiscordBotClient/total?style=for-the-badge&color=B5E8E0&logoColor=D9E0EE&labelColor=302D41"/></a>
+> <a href="https://github.com/EquicordDBC/DiscordBotClient/releases/latest"><img src="https://img.shields.io/github/downloads/EquicordDBC/DiscordBotClient/total?style=for-the-badge&color=B5E8E0&logoColor=D9E0EE&labelColor=302D41"/></a>
 
 <table>
   <tr>
@@ -70,22 +65,22 @@ major systems in the release overview:
       <code>NSIS installer</code>
     </td>
     <td>
-      <a href="https://github.com/aiko-chan-ai/DiscordBotClient/releases/latest/download/DiscordBotClient-win-x64.exe">
-        <img alt="DiscordBotClient-win-x64.exe" src="https://img.shields.io/github/downloads/aiko-chan-ai/DiscordBotClient/latest/DiscordBotClient-win-x64.exe?style=for-the-badge&logo=windows&color=DDB6F2&logoColor=D9E0EE&labelColor=302D41"></a>
+      <a href="https://github.com/EquicordDBC/DiscordBotClient/releases/latest/download/DiscordBotClient-win-x64.exe">
+        <img alt="DiscordBotClient-win-x64.exe" src="https://img.shields.io/github/downloads/EquicordDBC/DiscordBotClient/latest/DiscordBotClient-win-x64.exe?style=for-the-badge&logo=windows&color=DDB6F2&logoColor=D9E0EE&labelColor=302D41"></a>
       </a>
     </td>
   </tr>
   <tr> <td>Linux</td>
     <td align="center"><code>.AppImage</code></td>
     <td>
-      <a href="https://github.com/aiko-chan-ai/DiscordBotClient/releases/latest/download/DiscordBotClient-linux-x86_64.AppImage"><img alt="DiscordBotClient-linux-x86_64.AppImage" src="https://img.shields.io/github/downloads/aiko-chan-ai/DiscordBotClient/latest/DiscordBotClient-linux-x86_64.AppImage?style=for-the-badge&logo=linux&color=F5C2E7&logoColor=D9E0EE&labelColor=302D41"></a>
+      <a href="https://github.com/EquicordDBC/DiscordBotClient/releases/latest/download/DiscordBotClient-linux-x86_64.AppImage"><img alt="DiscordBotClient-linux-x86_64.AppImage" src="https://img.shields.io/github/downloads/EquicordDBC/DiscordBotClient/latest/DiscordBotClient-linux-x86_64.AppImage?style=for-the-badge&logo=linux&color=F5C2E7&logoColor=D9E0EE&labelColor=302D41"></a>
     </td>
   </tr>
   <tr>
     <td>Mac arm64 (Apple Silicon)</td>
     <td align="center"><code>.dmg</code></td>
     <td>
-      <a href="https://github.com/aiko-chan-ai/DiscordBotClient/releases/latest/download/DiscordBotClient-mac-arm64.dmg"><img alt="DiscordBotClient-mac-arm64.dmg" src="https://img.shields.io/github/downloads/aiko-chan-ai/DiscordBotClient/latest/DiscordBotClient-mac-arm64.dmg?style=for-the-badge&logo=macos&color=E8A2AF&logoColor=D9E0EE&labelColor=302D41"></a>
+      <a href="https://github.com/EquicordDBC/DiscordBotClient/releases/latest/download/DiscordBotClient-mac-arm64.dmg"><img alt="DiscordBotClient-mac-arm64.dmg" src="https://img.shields.io/github/downloads/EquicordDBC/DiscordBotClient/latest/DiscordBotClient-mac-arm64.dmg?style=for-the-badge&logo=macos&color=E8A2AF&logoColor=D9E0EE&labelColor=302D41"></a>
     </td>
     <tr>
     <td>Mac x64 (Intel)</td>
@@ -109,9 +104,9 @@ https://git-scm.com/downloads.
 
 Open a command line and execute the following commands:
 ```shell
-git clone https://github.com/aiko-chan-ai/DiscordBotClient.git
+git clone https://github.com/EquicordDBC/DiscordBotClient.git
 cd DiscordBotClient
-git clone https://github.com/aiko-chan-ai/VencordDBC.git
+git clone https://github.com/EquicordDBC/EquicordDBC.git
 npm run requirement
 npm run build
 ```
@@ -176,7 +171,7 @@ the projects GitHub issue tracker.
 
 # FAQ
 
-In order to find answers to common questions, check out the FAQ in the [wiki](https://github.com/aiko-chan-ai/DiscordBotClient/issues/8):
+In order to find answers to common questions, check out the FAQ in the [wiki](https://github.com/EquicordDBC/DiscordBotClient/issues/8):
 
 ## Similar projects
 
@@ -192,8 +187,7 @@ Hit me up if you have a similar project, and I'll gladly add it to the list.
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=aiko-chan-ai/DiscordBotClient&type=Date)](https://star-history.com/#aiko-chan-ai/DiscordBotClient&Date)
-
+[![Star History Chart](https://api.star-history.com/svg?repos=EquicordDBC/DiscordBotClient&type=Date)](https://star-history.com/#EquicordDBC/DiscordBotClient&Date)
 ---
 
 ## How to update to the latest Discord version ?
@@ -201,12 +195,12 @@ Hit me up if you have a similar project, and I'll gladly add it to the list.
 1. Clone the repository and cd into it.
 
 ```sh
-git clone https://github.com/aiko-chan-ai/DiscordBotClient.git
+git clone https://github.com/EquicordDBC/DiscordBotClient.git
 cd DiscordBotClient
 git clone https://github.com/Vendicated/Vencord.git
-// Rename from Vencord to VencordDBC
+// Rename from Vencord to EquicordDBC
 // Ex: Windows PowerShell
-Rename-Item -Path Vencord -NewName VencordDBC
+Rename-Item -Path Vencord -NewName EquicordDBC
 ```
 
 2. Install required dependencies.
@@ -219,8 +213,8 @@ npm run requirement
 npm run fetchLatestDiscordBuild
 ```
 
-4. Copy BotClient plugin from [my repo](https://github.com/aiko-chan-ai/VencordDBC)
-> Guide: [Vencord.md](https://github.com/aiko-chan-ai/DiscordBotClient/blob/electron-v3/Vencord.md)
+4. Copy BotClient plugin from [my repo](https://github.com/EquicordDBC/EquicordDBC)
+> Guide: [Vencord.md](https://github.com/EquicordDBC/DiscordBotClient/blob/electron-v3/Vencord.md)
 
 ## Credits
 
@@ -230,4 +224,6 @@ This project was mainly inspired by [SamuelScheit](https://github.com/SamuelSche
 [Discord Bot Client](https://github.com/SamuelScheit/discord-bot-client), which he sadly didn't
 develop any further.
 
-And a big thank to [Vencord](https://github.com/Vendicated/Vencord) developers for making it easier for me to create this app
+A big thank to [Vencord](https://github.com/Vendicated/Vencord) developers for making it easier for me to create this app
+
+Also a big thank to [Equicord](https://github.com/Equicord/Equicord) developers for giving me a reason to make this fork
